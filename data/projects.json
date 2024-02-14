@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Nekjeu",
+        "desc": "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+        "link":"https://nekjeu.fr",
+        "illu":"/assets/projects/nekjeu.png"
+    },
+    {
+        "name": "Crypto Screener Application",
+        "desc": "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+        "link":"https://www.linkedin.com/in/brice-eliasse/",
+        "illu":"/assets/projects/nekjeu.png"
+    },
+    {
+        "name": "Crypto Screener Application",
+        "desc": "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
+        "link":"https://www.linkedin.com/in/brice-eliasse/",
+        "illu":"/assets/projects/nekjeu.png"
+    }
+]

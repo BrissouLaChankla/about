@@ -1,0 +1,20 @@
+[
+    {
+        "avatar": "/assets/testimonials/andrea.jpg",
+        "text": "Je recommande fortement Brice pour son sérieux et ses capacités d'animation lors des sessions de formation en développement web à La Capsule.",
+        "name": "Andréa G.",
+        "job": "CEO & Campus Manager"
+    },
+    {
+        "avatar": "/assets/testimonials/pierre.webp",
+        "text": "J'ai eu l'opportunité de travailler avec Brice pour un projet chez G2 Esports et je ne peux que recommander ses services : exécution rapide, qualitative et flexible.",
+        "name": "Pierre S.",
+        "job": "Brand Manager"
+    },
+    {
+        "avatar": "/assets/testimonials/gregory.jpg",
+        "text": "Très bon développeur capable de répondre à vos demandes précisément et rapidement.",
+        "name": "Grégory G.",
+        "job": "Lead Developer"
+    }
+]
