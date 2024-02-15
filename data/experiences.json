@@ -1,14 +1,23 @@
 [
     {
+        "icon": "la_capsule.png",
+        "title":"Lead Teacher at La Capsule",
+        "startDate":"",
+        "endDate":"",
+        "description": "As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide."
+    },
+    {
         "icon": "github.svg",
-        "link": "https://github.com/BrissouLaChankla"
+        "title":"FullStack developer & Project Manager at Nanaba",
+        "startDate":"",
+        "endDate":"",
+        "description": "As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide."
     },
     {
-        "icon": "linkedin.svg",
-        "link": "https://www.linkedin.com/in/brice-eliasse/"
-    },
-    {
-        "icon": "mail.svg",
-        "link": "https://github.com/BrissouLaChankla"
-    }
+        "icon": "github.svg",
+        "title":"Lead Software Engineer at Google",
+        "startDate":"",
+        "endDate":"",
+        "description": "As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide."
+    }   
 ]

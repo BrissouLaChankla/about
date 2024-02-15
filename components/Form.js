@@ -2,6 +2,10 @@
 import { useState } from 'react';
 import Cta from './Cta';
 
+import IconSocial from "@/components/IconSocial";
+import socials from '@/data/socials'
+
+
 export default function BasicForm() {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -51,18 +55,18 @@ export default function BasicForm() {
                     className="relative block rounded-md border border-black shadow-sm focus-within:border-black focus-within:ring-1 focus-within:ring-black"
                 >
                     <input
-                    required
+                        required
                         value={name} onChange={(e) => setName(e.target.value)}
                         type="text"
                         id="Name"
                         className="w-full peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-3"
-                        placeholder="Name"
+                        placeholder="Nom"
                     />
 
                     <span
                         className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-500 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
                     >
-                        Username
+                        Nom
                     </span>
                 </label>
             </div>
@@ -74,7 +78,7 @@ export default function BasicForm() {
                     className="relative block rounded-md border border-black shadow-sm focus-within:border-black focus-within:ring-1 focus-within:ring-black"
                 >
                     <input
-                    required
+                        required
                         value={email} onChange={(e) => setEmail(e.target.value)}
                         type="email"
                         id="Email"
@@ -99,14 +103,15 @@ export default function BasicForm() {
                     <textarea
                         value={message} onChange={(e) => setMessage(e.target.value)}
                         id="message"
-                        placeholder='How can I help ?'
-                        className="w-full peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-3"
+                        required
+                        placeholder='Dites-moi tout'
+                        className="w-full h-32 peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 p-3"
                     ></textarea>
 
                     <span
-                        className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-500 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
+                        className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-500 transition-all peer-placeholder-shown:top-6 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
                     >
-                        How can I help ?
+                        Dites-moi tout
                     </span>
                 </label>
 
@@ -114,14 +119,17 @@ export default function BasicForm() {
 
             </div>
 
-            <div className="formcarry-block">
-                
-                <button type="submit">
-                <Cta value="Send">
-                    <svg height={18} width={18} className='invert' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
-                </Cta>
+            <div className="formcarry-block flex gap-3 items-center">
 
+                <button type="submit">
+                    <Cta value="Envoyer">
+                        <svg height={18} width={18} className='invert' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z" /></svg>
+                    </Cta>
                 </button>
+                <hr className='grow' />
+                <div className='flex gap-3'>
+                    {socials.map((social, i) => <IconSocial key={i} {...social} />)}
+                </div>
             </div>
         </form>
     )

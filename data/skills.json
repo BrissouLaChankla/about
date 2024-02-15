@@ -1,34 +1,34 @@
 [
     {
-        "icon": "github.svg",
-        "link": "Github"
+        "icon": "javascript.svg",
+        "name": "Javascript"
     },
     {
-        "icon": "github.svg",
-        "link": "Github"
+        "icon": "nextjs.svg",
+        "name": "Next.js"
     },{
-        "icon": "github.svg",
-        "link": "Github"
+        "icon": "teaching.svg",
+        "name": "Teaching"
     },{
-        "icon": "github.svg",
-        "link": "Github"
+        "icon": "expressjs.svg",
+        "name": "Express.js"
     },{
-        "icon": "github.svg",
-        "link": "Github"
+        "icon": "laravel.svg",
+        "name": "Laravel"
     },{
-        "icon": "github.svg",
-        "link": "Github"
+        "icon": "react.svg",
+        "name": "React Native"
     },{
-        "icon": "github.svg",
-        "link": "Github"
+        "icon": "tailwind.svg",
+        "name": "Tailwind"
     },{
-        "icon": "github.svg",
-        "link": "Github"
+        "icon": "wordpress.svg",
+        "name": "Wordpress"
     },{
-        "icon": "github.svg",
-        "link": "Github"
+        "icon": "communication.svg",
+        "name": "Communication"
     },{
-        "icon": "github.svg",
-        "link": "Github"
+        "icon": "seo.svg",
+        "name": "SEO"
     }
 ]
