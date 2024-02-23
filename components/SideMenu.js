@@ -2,9 +2,9 @@ import Image from "next/image"
 
 export default function SideMenu(props) {
     return (
-        <div className="flex h-screen flex-col justify-between border-e bg-white">
-            <div className="p-4">
-                <div className="flex items-center justify-between">
+        <div className="flex h-screen flex-col justify-between bg-white">
+            <div className="pt-4">
+                <div className="flex">
                     <span className="h-10 w-32 flex">
                         <Image src="/apple-touch-icon.png" height={44} width={44} className="h-9 md:h-11 object-contain" />
                         <a href="/" className="flex pt-[2.5px] flex-col font-bold text-sm leading-tight md:text-lg md:leading-none">
@@ -12,12 +12,11 @@ export default function SideMenu(props) {
                             <span>Eliasse</span>
                         </a>
                     </span>
-                    <Image src="/assets/icons/cross.svg" height={35} width={35} className="cursor-pointer" onClick={() => props.closeSide()} />
-
                 </div>
                 <ul className="mt-6 space-y-1">
                     <li>
                         <a
+                        onClick={props.toggleOpen}
                             href="#about"
                             className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                         >
@@ -26,6 +25,7 @@ export default function SideMenu(props) {
                     </li>
                     <li>
                         <a
+                            onClick={props.toggleOpen}
                             href="#skills"
                             className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                         >
@@ -34,6 +34,7 @@ export default function SideMenu(props) {
                     </li>
                     <li>
                         <a
+                            onClick={props.toggleOpen}
                             href="#project"
                             className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                         >
@@ -42,6 +43,7 @@ export default function SideMenu(props) {
                     </li>
                     <li>
                         <a
+                            onClick={props.toggleOpen}
                             href="#contact"
                             className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
                         >
