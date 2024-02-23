@@ -1,20 +1,33 @@
 [
     {
-        "name": "Nekjeu",
-        "desc": "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
-        "link":"https://nekjeu.fr",
-        "illu":"/assets/projects/nekjeu.png"
+        "name": "Nekjeu - Défi tes amis",
+        "desc": "Jeu web en temps réel où l'on défi un ami sur la discographie de l'artiste Nekfeu. Le premier à trouver l'album de la musique diffusée gagne des points.",
+        "link": "https://nekjeu.fr",
+        "stacks": [
+            "Vue.js",
+            "Laravel",
+            "Websockets"
+        ],
+        "illu": "/assets/projects/nekjeu.png"
     },
     {
-        "name": "Crypto Screener Application",
-        "desc": "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
-        "link":"https://www.linkedin.com/in/brice-eliasse/",
-        "illu":"/assets/projects/nekjeu.png"
+        "name": "G2 Detonate - Génère ta photo Twitter",
+        "desc": "Détoure et place automatiquement une image sur un fond d'explosion. Permet aux fans de l'équipe G2 Esports de montrer leur soutien sur les réseaux sociaux.",
+        "link": "https://g2detonate.com",
+        "stacks": [
+            "Laravel",
+            "Photoroom"
+        ],
+        "illu": "/assets/projects/g2.png"
     },
     {
-        "name": "Crypto Screener Application",
+        "name": "MVP Tracker - ",
         "desc": "I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.",
-        "link":"https://www.linkedin.com/in/brice-eliasse/",
-        "illu":"/assets/projects/nekjeu.png"
+        "link": "https://www.linkedin.com/in/brice-eliasse/",
+        "stacks": [
+            "Laravel",
+            "Photoroom"
+        ],
+        "illu": "/assets/projects/mvp.png"
     }
 ]

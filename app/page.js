@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import IconSocial from "@/components/IconSocial";
 
 // Data
@@ -16,9 +17,13 @@ import Form from "@/components/Form";
 
 export default function Home() {
   return (
-    <main className=" min-h-screen pt-24">
-      <div className="grid grid-cols-12 ">
-        <div className="max-w-[750px] flex flex-col col-span-6">
+    <main className=" min-h-screen pt-6 md:pt-24">
+      <div className="grid grid-cols-12 items-center">
+        <div className="col-span-12 md:col-span-6 relative min-h-64 md:min-h-96 md:order-1">
+          <Image src="/assets/illustrations/hero.svg" fill className="w-1/2" />
+        </div>
+
+        <div className="max-w-[750px] flex flex-col col-span-12 md:col-span-6">
           <div className="my-14">
             <h1>Hey, je suis <span className="font-extrabold"> Brice Eliasse.
               un développeur</span> <span>Fullstack </span>
@@ -27,8 +32,8 @@ export default function Home() {
             <p className="mt-6">Avec {new Date().getFullYear() - 2017} années d'expérience, j'ai acquis une expertise solide dans la création de sites web et d'applications.
 
 
-              C'est pour cela que depuis quelque années, en plus de développer, j'enseigne le code en école supérieure et en bootcamp à Nice.    
-              
+              C'est pour ça que depuis quelque années, en plus de développer, j'enseigne le code en école supérieure et en bootcamp à Nice.
+
               {/* J'aime la simplicité et l'efficacité, je vois le code comme un outil me permettant de donner vie à des projets auxquels je crois. */}
 
             </p>
@@ -37,16 +42,14 @@ export default function Home() {
             {socials.map((social, i) => <IconSocial key={i} {...social} />)}
           </div>
         </div>
-        <div className="col-span-6 relative">
-          <Image src="/assets/illustrations/hero.svg" fill />
-        </div>
+
       </div>
 
       <div id="skills" className="mt-24">
         <h2 className="text-center">Mes <span className="font-extrabold">Skills</span></h2>
-        <div className="grid grid-cols-5 gap-x-16 gap-y-12 mt-16">
+        <div className="grid grid-cols-12 lg:grid-cols-5 gap-x-6 gap-y-6 md:gap-x-16 md:gap-y-12 mt-16">
           {skills.map((skill, i) =>
-            <div key={i} className="col-span-1 h-48 border-2 border-black grid place-items-center rounded hover:bg-black group transition">
+            <div key={i} className="col-span-6 md:col-span-4 lg:col-span-1 h-48 border-2 border-black grid place-items-center rounded hover:bg-black group transition">
               <div className="group-hover:invert transition flex flex-col gap-5 items-center">
                 <Image src={`/assets/icons/skills/${skill.icon}`} alt={skill.name} width={50} height={50} />
                 <span className="font-bold text-xl">{skill.name}</span>
@@ -68,10 +71,10 @@ export default function Home() {
 
       <div id="about" className="mt-20">
         <div className="grid grid-cols-12 gap-10">
-          <div className="col-span-6 relative">
-            <Image src="/assets/illustrations/about.svg" fill objectFit="contain" />
+          <div className="col-span-12 md:col-span-6 relative h-80 md:h-96">
+            <Image src="/assets/illustrations/about.svg" fill className="object-fill" />
           </div>
-          <div className="col-span-6">
+          <div className="col-span-12 md:col-span-6">
             <h2>A <span className="font-extrabold">Propos</span></h2>
             <div className="flex flex-col gap-6 mt-10">
 
@@ -84,33 +87,35 @@ export default function Home() {
       </div>
 
 
-      <div className="bg-black py-20 max-w-full mt-20">
+      <div className="bg-black py-20 max-w-full mt-20" id="project">
         <div className="max-w-7xl m-auto">
           <h2 className="text-center text-white">Mes <span className="font-extrabold">Projets</span></h2>
-          <div className="mt-20 flex flex-col gap-24">
+          <div className="mt-20 flex flex-col gap-12 md:gap-24">
             {projects.map((xp, i) => <Project key={i} index={i} {...xp} />)}
+          </div>
+          <div className="text-end text-white mt-16">
+            <Link href="projects">Voir tous mes projets →</Link>
           </div>
         </div>
       </div>
 
       <div className="mt-20">
         <h2 className="text-center">Vos <span className="font-extrabold">Retours</span></h2>
-        <div className="grid grid-cols-3 gap-6 mt-20">
+        <div className="grid grid-cols-12 gap-6 mt-20">
           {testimonials.map((testimonial, i) =>
-            <Testimonial key={i} index={i} {...testimonial} />)}
+            <Testimonial className="col-span-12 md:col-span-4" key={i} index={i} {...testimonial} />)}
         </div>
       </div>
 
-      <div className="mt-28 grid grid-cols-12 gap-20 items-center">
-        <div className="col-span-6">
-          <Form />
-        </div>
-        <div className="col-span-6 flex flex-col gap-8 mb-6">
+      <div className="mt-28 grid grid-cols-12 gap-6 md:gap-20 items-center" id="contact">
+        <div className="col-span-12 md:col-span-6 flex flex-col gap-8 mb-6 md:order-1">
           <h2 className="font-extrabold max-w-sm">J'ai déjà hâte qu'on travaille ensemble</h2>
           <p>Si vous cherchez un <strong>développeur web Freelance situé à Nice</strong> pour votre projet ou si vous souhaitez simplement discuter, n'hésitez pas à me contacter.</p>
           <a href="mailto:hello@brice-eliasse.com" className="font-bold text-2xl">hello@brice-eliasse.com</a>
         </div>
-
+        <div className="col-span-12 md:col-span-6 ">
+          <Form />
+        </div>
       </div>
 
     </main>

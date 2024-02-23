@@ -1,9 +1,9 @@
 import Image from "next/image"
-export default function Testimonial({ avatar, text, name, job, index }) {
+export default function Testimonial({ avatar, text, name, job, index, className }) {
   const even = index % 2 !== 0;
 
   return (
-    <div className={`rounded-2xl shadow-xl p-10 text-center flex flex-col items-center justify-between gap-6 ${even ? "bg-black text-white" : ""}`}>
+    <div className={`${className} rounded-2xl shadow-xl p-10 text-center flex flex-col items-center justify-between gap-6 ${even ? "bg-black text-white" : ""}`}>
       <div className="relative">
         <Image src={avatar} width={96} height={96} className="rounded-full border-2 border-black" quality={100} />
         <Image src={"/assets/icons/quote.svg"} width={30} height={30} className="absolute right-0 bottom-0" />

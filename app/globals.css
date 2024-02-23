@@ -17,15 +17,20 @@
     @apply text-gray-500;
   }
 
-  main > div {
-    @apply max-w-7xl w-full m-auto relative
+  main > div, footer, .navbar {
+    @apply max-w-7xl w-full px-4 m-auto relative
   }
+
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .nav {
