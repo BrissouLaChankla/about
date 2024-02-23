@@ -19,12 +19,12 @@ export default function Home() {
   return (
     <main className=" min-h-screen pt-6 md:pt-24">
       <div className="grid grid-cols-12 items-center">
-        <div className="col-span-12 md:col-span-6 relative min-h-64 md:min-h-96 md:order-1">
-          <Image src="/assets/illustrations/hero.svg" fill className="w-1/2" />
+        <div className="col-span-12 md:col-span-6 relative min-h-56 md:min-h-64 md:order-1">
+          <Image src="/assets/illustrations/hero.svg" fill  />
         </div>
 
         <div className="max-w-[750px] flex flex-col col-span-12 md:col-span-6">
-          <div className="my-14">
+          <div className="my-8 md:my-14">
             <h1>Hey, je suis <span className="font-extrabold"> Brice Eliasse.
               un développeur</span> <span>Fullstack </span>
               Basé à <span className="font-extrabold">Nice.</span>
@@ -70,7 +70,7 @@ export default function Home() {
 
 
       <div id="about" className="mt-20">
-        <div className="grid grid-cols-12 gap-10">
+        <div className="grid grid-cols-12 md:gap-10">
           <div className="col-span-12 md:col-span-6 relative h-80 md:h-96">
             <Image src="/assets/illustrations/about.svg" fill className="object-fill" />
           </div>

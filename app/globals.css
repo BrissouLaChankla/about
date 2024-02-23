@@ -4,15 +4,19 @@
 
 
 @layer base {
+  
   h1 {
-    @apply text-5xl leading-normal;
+    @apply text-3xl md:text-5xl leading-normal;
   }
+  
   h2 {
     @apply text-4xl leading-snug;
   }
+
   h3 {
     @apply text-2xl font-semibold
   }
+
   p {
     @apply text-gray-500;
   }

@@ -1,7 +1,7 @@
 "use client"
 import Cta from "./Cta"
 import Image from "next/image"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Burger from "./Burger"
 import SideMenu from "./SideMenu"
 
@@ -9,7 +9,17 @@ export default function Navbar() {
 
   const [isOpen, setOpen] = useState(false);
 
-  isOpen ? document.body.style.overflow= "hidden" : document.body.style.overflow= "visible";
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'visible';
+    }
+    return () => {
+      document.body.style.overflow = 'visible';
+    };
+  }, [isOpen]);
 
   const toggleOpen = () => {
     setOpen(!isOpen);
@@ -17,7 +27,7 @@ export default function Navbar() {
 
 
   return (
-    <div className="w-full bg-white z-40 navbar overflow-hidden relative">
+    <div className="w-full bg-white z-40 navbar overflow-hidden relative fixed top-0 left-0">
       {isOpen ?
         <SideMenu toggleOpen={toggleOpen} /> :
         <div className="max-w-7xl m-auto grid grid-cols-12 py-4 items-center">
