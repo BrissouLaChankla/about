@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <main className=" min-h-screen pt-6 md:pt-24">
       <div className="grid grid-cols-12 items-center">
-        <div className="col-span-12 md:col-span-6 relative min-h-56 md:min-h-64 md:order-1">
+        <div className="col-span-12 md:col-span-6 relative min-h-56 md:min-h-96 md:order-1">
           <Image src="/assets/illustrations/hero.svg" fill  />
         </div>
 
